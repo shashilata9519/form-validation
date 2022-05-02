@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Welcome To Car Booking Services</title>
+    <style>
+        form{
+            background-color: rgba(0, 0, 0, 0.416);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        body {
+            background-image: url('img/m3.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        label {
+          
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            text-shadow: 4px 4px black;
+            color: white;
+        }
+        div{
+            color: white;
+        }
+
+        .btn {
+           
+                box-shadow: 0 0 30px rgb(180, 220, 238);
+                background-color: rgb(30, 181, 241);
+                color: white;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                border-radius: 5px;
+                padding: 4px 20px;
+            }
+
+           .btn:hover {
+                box-shadow: 0px 0px 20px white,
+                    0px 0px 15px white inset;
+                   
+            }
+            .invalid-feedback{
+                font-weight: bold;
+            }
+        
+    </style>
+</head>
+
+<body>
+    <div id="message"></div>
+
+    <div class="container my-3">
+        <h1 class="text-center text-uppercase  my-4">Car Booking Services</h1>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control  " id="name" placeholder="Enter Your Name">
+                <div class="invalid-feedback" id="namevalid">Your username must be 2-10 character long and should not
+                    start with number . </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="email" placeholder="Enter Your Email">
+                <div class="invalid-feedback" id="emailvalid">Your email must be valid . </div>
+            </div>
+
+            <div class="form-group my-3">
+                <label for="car" id="car" class="form-label">Select Your car <span class="text-danger">*</span></label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected> ---</option>
+                    <option value="1">Maruti Suzuki </option>
+                    <option value="2">Hyundai</option>
+                    <option value="3">Ford</option>
+                    <option value="4">Audi</option>
+                </select>
+            </div>
+
+            <div class="form-group my-3">
+                <label for="address"> Address</label>
+                <textarea class="form-control" placeholder="Enter Your Address" id="address"
+                    style="height: 100px"></textarea>
+            </div>
+
+            <div class="form-group my-3">
+                <label for="number">Contact Number <span class="text-danger">*</span></label>
+                <input class="form-control" placeholder="Enter Your Contact number" id="number" name="number"></input>
+                <div class="invalid-feedback" id="numbervalid">Your Contact Number must be 10 digit long . </div>
+            </div>
+
+            <div class="form-group my-3">
+                <label for="formGroupExample" class="form-label">Any other message</label>
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+            </div>
+
+            <button class="btn" id="submit">submit</button>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+
+</body>
+
+</html>
